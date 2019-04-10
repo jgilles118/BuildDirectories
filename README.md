@@ -8,5 +8,7 @@ and follow the path sequence of the OS being used.
 By following the comments within the code, the edit
 can be made in the proper location.
 
-Author: James Gilles
+Author: James R Gilles
+Created: December 20, 2018
+
 
