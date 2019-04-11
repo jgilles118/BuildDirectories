@@ -1,7 +1,7 @@
 /*A Java code that will create a directory
  * and sub directories within a Windows PC
  * 
- * Author: James Gilles
+ * Author: Hidden Jemz
  * */
 import java.io.File;
 import java.time.YearMonth;
