@@ -1,14 +1,16 @@
 /*A Java code that will create a directory
  * and sub directories within a Windows PC
  * 
- * Author: Hidden Jemz
+ * Author: James Gilles
  * */
+
 import java.io.File;
 import java.time.YearMonth;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 public class Create_Drectories {
+	
 	public static void main(String[] args){
 		
 		//create a Name & attach the date to the Directory
@@ -23,51 +25,55 @@ public class Create_Drectories {
 		
 		//Destination Path to create the file.
 		//Your path will be different on your PC
-		String destination = "C:\\Users\\Gilles the Great\\Desktop\\";
+		String destination = "C:\\Users\\Your user name\\Desktop\\";
 		
 		//Insert the path & directory name
 		File inputDir = new File(destination + myNewDirectory);
 		
-		//Popup to confirm the directory creation
-		if(inputDir.exists()){
-			JLabel label = new JLabel(inputDir.getName() + " already exists!", JLabel.CENTER);
-			label.setAlignmentX(0);
-			label.setAlignmentY(0);
-			JFrame frame = new JFrame("Creating Directories");
-			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			frame.setSize(400,200);
-			frame.setVisible(true);
-			frame.add(label);
-			System.out.println(inputDir.getName() + " already exists!");
-			return;
+			//Popup to confirm the directory creation
+			if(inputDir.exists())
+			{
+				JLabel label = new JLabel(inputDir.getName() + " already exists!", JLabel.CENTER);
+				label.setAlignmentX(0);
+				label.setAlignmentY(0);
+				JFrame frame = new JFrame("Creating Directories");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.setSize(400,200);
+				frame.setVisible(true);
+				frame.add(label);
+				
+				return;
 			}
 			
-		else{
-			//Create & insert the directory and the Popup
-			inputDir.mkdir();
-			JLabel label = new JLabel(inputDir.getName() + " has been created!", JLabel.CENTER);
-			label.setAlignmentX(0);
-			label.setAlignmentY(0);
-			JFrame frame = new JFrame("Creating Directories");
-			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			frame.setSize(400,200);
-			frame.setVisible(true);
-			frame.add(label);
-			System.out.println(inputDir.getName() + " has been created!");
-			//Insert the sub-directories
-			for(int i = 0; i<= subDir.length-1; ++i){
-				File subDirs = new File(inputDir +"\\"+subDir[i]);
-				subDirs.mkdir();
+			else
+			{
+				//Create & insert the directory and the Popup
+				inputDir.mkdir();
+				JLabel label = new JLabel(inputDir.getName() + " has been created!", JLabel.CENTER);
+				label.setAlignmentX(0);
+				label.setAlignmentY(0);
+				JFrame frame = new JFrame("Creating Directories");
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				frame.setSize(400,200);
+				frame.setVisible(true);
+				frame.add(label);
+			
+				//Insert the sub-directories
+				for(int i = 0; i<= subDir.length-1; ++i)
+				{
+					File subDirs = new File(inputDir +"\\"+subDir[i]);
+					subDirs.mkdir();
 				
-				//Insert the sub_sub-directories into 1 sub-directory
-				if(subDir[i] == "DIR 1"){
-					
-					for(int j = 0; j <= sub_subDir.length-1; ++j){
-						File subSubDir = new File(inputDir + "\\DIR 1\\" + sub_subDir[j]);
-						subSubDir.mkdir();
+					//Insert the sub_sub-directories into 1 sub-directory
+					if(subDir[i] == "DIR 1")
+					{
+						for(int j = 0; j <= sub_subDir.length-1; ++j)
+						{
+							File subSubDir = new File(inputDir + "\\DIR 1\\" + sub_subDir[j]);
+							subSubDir.mkdir();
+						}
 					}
-				}
-			}
-		}
-	}
-}
+				}//Close FOR
+			}//Close ELSE
+	}//Close Main
+}//Close Class
