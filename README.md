@@ -2,9 +2,9 @@
 
 This java code was created to teach students how to build directories or folders on Windows OS.
 
-1. This code will work for other operating systems.
-2. The student must remember to change the path and follow the path sequence of the OS being used.
-3. Follow the comments and make any adjustment to the statements.
+1. This code will work on other operating systems.
+2. The student must change the path and follow the path sequence of the OS being used.
+3. Follow the comments and make any necessary adjustment to the statements.
 
 ### Author: 
 James R Gilles<br>
