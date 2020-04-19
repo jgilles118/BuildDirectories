@@ -1,4 +1,4 @@
-### Creating Directories/Folders using Java
+# Creating Directories/Folders using Java
 ---
 This java code was created to teach students how to build directories or folders in a Windows OS.
 
@@ -12,7 +12,7 @@ Follow the comments and make any adjustment to the statements.
 
 ---
 
-# Author: 
+### Author: 
 James R Gilles
 Date: December 20, 2018
 
