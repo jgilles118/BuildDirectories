@@ -6,8 +6,6 @@ This java code was created to teach students how to build directories or folders
 2. The student must remember to change the path and follow the path sequence of the OS being used.
 3. Follow the comments and make any adjustment to the statements.
 
----
-
 ### Author: 
 James R Gilles<br>
 Date: December 20, 2018
