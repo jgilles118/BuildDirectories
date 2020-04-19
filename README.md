@@ -11,7 +11,10 @@ and follow the path sequence of the OS being used.
 Follow the comments and make any adjustment to the statements.
 
 ---
-Author: James R Gilles
-Created: December 20, 2018
 
+# Author: 
+James R Gilles
+Date: December 20, 2018
+
+---
 
