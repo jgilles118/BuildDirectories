@@ -13,7 +13,7 @@ Follow the comments and make any adjustment to the statements.
 ---
 
 ### Author: 
-James R Gilles
+James R Gilles<br>
 Date: December 20, 2018
 
 ---
