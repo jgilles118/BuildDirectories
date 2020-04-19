@@ -30,7 +30,7 @@ public class Create_Drectories {
 		//Insert the path & directory name
 		File inputDir = new File(destination + myNewDirectory);
 		
-			//Popup to confirm the directory creation
+			//Popup notification explaining the dictories already exists. Eliminate duplicaton
 			if(inputDir.exists())
 			{
 				JLabel label = new JLabel(inputDir.getName() + " already exists!", JLabel.CENTER);
@@ -47,7 +47,7 @@ public class Create_Drectories {
 			
 			else
 			{
-				//Create & insert the directory and the Popup
+				//Popup to display a successful creation.
 				inputDir.mkdir();
 				JLabel label = new JLabel(inputDir.getName() + " has been created!", JLabel.CENTER);
 				label.setAlignmentX(0);
